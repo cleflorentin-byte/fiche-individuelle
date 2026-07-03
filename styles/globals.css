@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=JetBrains+Mono:wght@500;600&display=swap');
+
+body {
+  background: #F7F3EC;
+  color: #1C1A17;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+.board-font { font-family: 'Oswald', 'Arial Narrow', sans-serif; }
+.mono-font { font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }
