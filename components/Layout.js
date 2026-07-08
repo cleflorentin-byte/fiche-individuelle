@@ -1,4 +1,4 @@
-import { Calendar, List, FileText, TrendingUp, Upload, LogOut } from "lucide-react";
+import { Calendar, List, FileText, TrendingUp, Upload, LogOut, UserCheck } from "lucide-react";
 import { SLATE, ORANGE, INK } from "../lib/categories";
 import { supabase } from "../lib/supabaseClient";
 import { useRouter } from "next/router";
@@ -8,6 +8,7 @@ const NAV = [
   { href: "/registre", label: "Registre", icon: List },
   { href: "/fia", label: "Fiches FIA", icon: FileText },
   { href: "/recap", label: "Récapitulatif annuel", icon: TrendingUp },
+  { href: "/import-salarie", label: "Import données salarié", icon: UserCheck },
   { href: "/import", label: "Import CPS", icon: Upload, accent: true },
 ];
 
@@ -25,7 +26,7 @@ export default function Layout({ title, subtitle, current, profile, children }) 
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <div>
             <p className="board-font text-xs uppercase tracking-widest" style={{ color: ORANGE }}>
-              Délégué Virtuel — CFDT EIC LORCA
+              CFDT EIC LORCA
             </p>
             <h1 className="board-font text-2xl sm:text-3xl font-bold uppercase tracking-wide text-white">{title}</h1>
             {subtitle && <p className="text-xs text-white opacity-60 mt-1">{subtitle}</p>}
